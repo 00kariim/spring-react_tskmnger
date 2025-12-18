@@ -1,0 +1,1011 @@
+2025-12-18T09:43:42.226+01:00  INFO 745189 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T09:43:42.241+01:00  INFO 745189 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-18T09:43:42.243+01:00  INFO 745189 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-18T09:43:50.904+01:00  INFO 792477 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Starting TaskManagerApplication using Java 17.0.17 with PID 792477 (/home/opm/IdeaProjects/spring/target/classes started by opm in /home/opm/IdeaProjects/spring)
+2025-12-18T09:43:50.905+01:00  INFO 792477 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-18T09:43:51.522+01:00  INFO 792477 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18T09:43:51.575+01:00  INFO 792477 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-12-18T09:43:52.007+01:00  INFO 792477 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-18T09:43:52.017+01:00  INFO 792477 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-18T09:43:52.018+01:00  INFO 792477 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-18T09:43:52.059+01:00  INFO 792477 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-18T09:43:52.059+01:00  INFO 792477 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1118 ms
+2025-12-18T09:43:52.240+01:00  INFO 792477 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-18T09:43:52.307+01:00  INFO 792477 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15e8f9b2
+2025-12-18T09:43:52.308+01:00  INFO 792477 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-18T09:43:52.329+01:00  INFO 792477 --- [spring] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/task_manager (PostgreSQL 16.11)
+2025-12-18T09:43:52.360+01:00  INFO 792477 --- [spring] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.019s)
+2025-12-18T09:43:52.374+01:00  INFO 792477 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
+2025-12-18T09:43:52.376+01:00  INFO 792477 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-12-18T09:43:52.446+01:00  INFO 792477 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18T09:43:52.494+01:00  INFO 792477 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-18T09:43:52.520+01:00  INFO 792477 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-18T09:43:52.676+01:00  INFO 792477 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18T09:43:53.211+01:00  INFO 792477 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18T09:43:53.238+01:00  INFO 792477 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T09:43:53.581+01:00  WARN 792477 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-18T09:43:53.605+01:00 DEBUG 792477 --- [spring] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-12-18T09:43:53.796+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bed8b91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dffcf1, org.springframework.security.web.context.SecurityContextHolderFilter@3903cfc9, org.springframework.security.web.header.HeaderWriterFilter@49c72fb7, org.springframework.web.filter.CorsFilter@738ae785, org.springframework.security.web.authentication.logout.LogoutFilter@1b897ffb, com.example.taskmanager.shared.security.JwtAuthFilter@634ff56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@288e50c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58e0d1ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13288174, org.springframework.security.web.session.SessionManagementFilter@6c75c5e8, org.springframework.security.web.access.ExceptionTranslationFilter@4b74a4d, org.springframework.security.web.access.intercept.AuthorizationFilter@51c15508]
+2025-12-18T09:43:54.004+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.005+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/actuator/**']
+2025-12-18T09:43:54.005+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.006+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui/**']
+2025-12-18T09:43:54.006+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.006+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui.html']
+2025-12-18T09:43:54.006+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.006+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/v3/api-docs/**']
+2025-12-18T09:43:54.006+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.007+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-resources/**']
+2025-12-18T09:43:54.007+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.007+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/webjars/**']
+2025-12-18T09:43:54.007+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.007+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/favicon.ico']
+2025-12-18T09:43:54.007+01:00  WARN 792477 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T09:43:54.008+01:00  INFO 792477 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/error']
+2025-12-18T09:43:54.052+01:00  INFO 792477 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-12-18T09:43:54.064+01:00  INFO 792477 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Started TaskManagerApplication in 3.454 seconds (process running for 3.705)
+2025-12-18T09:44:31.064+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-18T09:44:31.065+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-18T09:44:31.067+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-18T09:44:31.081+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-18T09:44:31.086+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T09:44:31.087+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-18T09:44:31.397+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] http                                     : POST /api/auth/login 200 308ms req={ "email": "admin@admin.com", "password": "123456" } resp={"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzY2MDQ3NDcxLCJleHAiOjE3NjYxMzM4NzF9.DptDNuAXzhwbLlarmxFBwt_Gw6-05cSrStj5KEGqjT0ZXMXlFu8cWl6Z9CCO5Na9"}
+2025-12-18T09:44:37.821+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T09:44:37.852+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T09:44:37.864+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects 200 12ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T09:45:24.665+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/tasks/6/complete
+2025-12-18T09:45:24.666+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/tasks/6/complete
+2025-12-18T09:45:24.673+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-4] http                                     : POST /api/projects/1/tasks/6/complete 200 6ms req= resp=
+2025-12-18T09:46:30.527+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/tasks/6/complete
+2025-12-18T09:46:30.530+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/tasks/6/complete
+2025-12-18T09:46:30.538+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-7] http                                     : POST /api/projects/1/tasks/6/complete 200 7ms req= resp=
+2025-12-18T09:47:29.083+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/progress
+2025-12-18T09:47:29.085+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/progress
+2025-12-18T09:47:29.086+01:00  WARN 792477 --- [spring] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-12-18T09:47:29.087+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-8] http                                     : POST /api/projects/1/progress 405 1ms req= resp=
+2025-12-18T09:48:36.689+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:48:36.689+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:48:36.697+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:48:36.697+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:48:36.704+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:48:36.706+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects/1 200 8ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:48:36.707+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:48:36.707+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:48:36.707+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/1/tasks 200 9ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false}]
+2025-12-18T09:48:36.708+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:48:36.709+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:48:36.710+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:48:36.715+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/1 200 5ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:48:36.718+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/1/tasks 200 8ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false}]
+2025-12-18T09:48:36.718+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/1/progress 200 11ms req= resp={"totalTasks":5,"completedTasks":2,"progressPercentage":40.0}
+2025-12-18T09:48:36.728+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:48:36.730+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:48:36.738+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/1/progress 200 8ms req= resp={"totalTasks":5,"completedTasks":2,"progressPercentage":40.0}
+2025-12-18T09:49:50.712+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-18T09:49:50.712+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T09:49:50.713+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-18T09:49:50.717+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-3] http                                     : POST /api/auth/login 200 4ms req={ "email": "admin@admin.com", "password": "123456" } resp={"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzY2MDQ3NzkwLCJleHAiOjE3NjYxMzQxOTB9.Tr9FK2ffkB9R9lOBql47A5Js3PsWWAeX6aAYPCVtfC41dXmuhL33MDjpFXCVWmB_"}
+2025-12-18T09:49:55.119+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/progress
+2025-12-18T09:49:55.120+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/progress
+2025-12-18T09:49:55.121+01:00  WARN 792477 --- [spring] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-12-18T09:49:55.121+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-4] http                                     : POST /api/projects/1/progress 405 0ms req= resp=
+2025-12-18T09:51:20.769+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:51:20.770+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T09:51:20.771+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-12-18T09:51:44.665+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T09:51:44.665+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T09:51:44.667+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T09:51:44.667+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T09:51:44.671+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-7] http                                     : GET /api/projects 200 4ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T09:51:44.671+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects 200 4ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T09:51:56.894+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-18T09:51:56.895+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T09:51:56.895+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-18T09:51:56.902+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-10] http                                     : POST /api/auth/login 200 7ms req={"email":"admin@admin.com","password":"123456"} resp={"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzY2MDQ3OTE2LCJleHAiOjE3NjYxMzQzMTZ9.P9UkLhBLI-ULzQ48HXQKkQZ5aM-6D4ABgb0v6WK_VP_ls3JAzXB9O2y-wkONEO6E"}
+2025-12-18T09:51:56.931+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T09:51:56.931+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T09:51:56.932+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T09:51:56.932+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T09:51:56.936+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects 200 3ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T09:51:56.936+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects 200 3ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T09:51:59.447+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:51:59.447+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:51:59.448+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:51:59.449+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:51:59.449+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:51:59.450+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:51:59.450+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:51:59.449+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:51:59.453+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:51:59.454+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:51:59.454+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/1 200 5ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:51:59.456+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:51:59.456+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:51:59.458+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/1/progress 200 8ms req= resp={"totalTasks":5,"completedTasks":2,"progressPercentage":40.0}
+2025-12-18T09:51:59.458+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/1 200 7ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:51:59.459+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/1/tasks 200 6ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false}]
+2025-12-18T09:51:59.464+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects/1/tasks 200 8ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false}]
+2025-12-18T09:51:59.465+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects/1/progress 200 9ms req= resp={"totalTasks":5,"completedTasks":2,"progressPercentage":40.0}
+2025-12-18T09:52:24.611+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/tasks
+2025-12-18T09:52:24.613+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/tasks
+2025-12-18T09:52:24.807+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-7] http                                     : POST /api/projects/1/tasks 200 194ms req={"title":"task","description":"task dzeb","dueDate":"2026-11-11T00:00:00.000Z"} resp=12
+2025-12-18T09:52:24.814+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:52:24.814+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:52:24.814+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:52:24.815+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:52:24.816+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:52:24.816+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:52:24.819+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects/1 200 3ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:52:24.820+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/1/tasks 200 4ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false},{"id":12,"projectId":1,"title":"task","description":"task dzeb","dueDate":"2026-11-11T00:00:00Z","completed":false}]
+2025-12-18T09:52:24.824+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects/1/progress 200 8ms req= resp={"totalTasks":6,"completedTasks":2,"progressPercentage":33.333333333333336}
+2025-12-18T09:52:36.148+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/1/tasks/12/complete
+2025-12-18T09:52:36.150+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/1/tasks/12/complete
+2025-12-18T09:52:36.166+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-3] http                                     : POST /api/projects/1/tasks/12/complete 200 16ms req= resp=
+2025-12-18T09:52:36.173+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T09:52:36.173+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T09:52:36.174+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T09:52:36.174+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T09:52:36.174+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T09:52:36.175+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T09:52:36.179+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/1/tasks 200 4ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false},{"id":12,"projectId":1,"title":"task","description":"task dzeb","dueDate":"2026-11-11T00:00:00Z","completed":true}]
+2025-12-18T09:52:36.179+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/1 200 5ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T09:52:36.182+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/1/progress 200 7ms req= resp={"totalTasks":6,"completedTasks":3,"progressPercentage":50.0}
+2025-12-18T09:52:44.525+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/1/tasks/12
+2025-12-18T09:52:44.527+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/1/tasks/12
+2025-12-18T09:52:44.536+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-9] http                                     : DELETE /api/projects/1/tasks/12 200 9ms req= resp=
+2025-12-18T09:52:44.537+01:00 ERROR 792477 --- [spring] [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+
+jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:303) ~[spring-orm-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy122.remove(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$DeleteExecution.doExecute(JpaQueryExecution.java:298) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy130.deleteByIdAndProjectId(Unknown Source) ~[na:na]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl.deleteByIdAndProjectId(TaskRepositoryImpl.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.6.jar:6.1.6]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl$$SpringCGLIB$$0.deleteByIdAndProjectId(<generated>) ~[classes/:na]
+	at com.example.taskmanager.task.application.DeleteTaskUseCaseImpl.deleteTask(DeleteTaskUseCaseImpl.java:22) ~[classes/:na]
+	at com.example.taskmanager.task.web.TaskController.deleteTask(TaskController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at com.example.taskmanager.config.AppConfig$1.doFilterInternal(AppConfig.java:35) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.example.taskmanager.shared.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:67) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-18T09:52:49.022+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/1/tasks/12
+2025-12-18T09:52:49.023+01:00 DEBUG 792477 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/1/tasks/12
+2025-12-18T09:52:49.028+01:00  INFO 792477 --- [spring] [http-nio-8080-exec-6] http                                     : DELETE /api/projects/1/tasks/12 200 4ms req= resp=
+2025-12-18T09:52:49.028+01:00 ERROR 792477 --- [spring] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+
+jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:303) ~[spring-orm-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy122.remove(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$DeleteExecution.doExecute(JpaQueryExecution.java:298) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy130.deleteByIdAndProjectId(Unknown Source) ~[na:na]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl.deleteByIdAndProjectId(TaskRepositoryImpl.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.6.jar:6.1.6]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl$$SpringCGLIB$$0.deleteByIdAndProjectId(<generated>) ~[classes/:na]
+	at com.example.taskmanager.task.application.DeleteTaskUseCaseImpl.deleteTask(DeleteTaskUseCaseImpl.java:22) ~[classes/:na]
+	at com.example.taskmanager.task.web.TaskController.deleteTask(TaskController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at com.example.taskmanager.config.AppConfig$1.doFilterInternal(AppConfig.java:35) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.example.taskmanager.shared.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:67) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-18T10:21:22.411+01:00  INFO 792477 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T10:21:22.414+01:00  INFO 792477 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-18T10:21:22.417+01:00  INFO 792477 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-18T10:21:30.774+01:00  INFO 827169 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Starting TaskManagerApplication using Java 17.0.17 with PID 827169 (/home/opm/IdeaProjects/spring/target/classes started by opm in /home/opm/IdeaProjects/spring)
+2025-12-18T10:21:30.776+01:00  INFO 827169 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-18T10:21:31.431+01:00  INFO 827169 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18T10:21:31.481+01:00  INFO 827169 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-12-18T10:21:31.901+01:00  INFO 827169 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-18T10:21:31.911+01:00  INFO 827169 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-18T10:21:31.911+01:00  INFO 827169 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-18T10:21:31.953+01:00  INFO 827169 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-18T10:21:31.954+01:00  INFO 827169 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2025-12-18T10:21:32.156+01:00  INFO 827169 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-18T10:21:32.222+01:00  INFO 827169 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4168f3d9
+2025-12-18T10:21:32.224+01:00  INFO 827169 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-18T10:21:32.244+01:00  INFO 827169 --- [spring] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/task_manager (PostgreSQL 16.11)
+2025-12-18T10:21:32.277+01:00  INFO 827169 --- [spring] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.020s)
+2025-12-18T10:21:32.290+01:00  INFO 827169 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
+2025-12-18T10:21:32.294+01:00  INFO 827169 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-12-18T10:21:32.364+01:00  INFO 827169 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18T10:21:32.404+01:00  INFO 827169 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-18T10:21:32.425+01:00  INFO 827169 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-18T10:21:32.576+01:00  INFO 827169 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18T10:21:33.097+01:00  INFO 827169 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18T10:21:33.115+01:00  INFO 827169 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T10:21:33.447+01:00  WARN 827169 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-18T10:21:33.470+01:00 DEBUG 827169 --- [spring] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-12-18T10:21:33.713+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@164cad52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b977aaa, org.springframework.security.web.context.SecurityContextHolderFilter@69374e28, org.springframework.security.web.header.HeaderWriterFilter@4b74a4d, org.springframework.web.filter.CorsFilter@5bed8b91, org.springframework.security.web.authentication.logout.LogoutFilter@6b7ebac1, com.example.taskmanager.shared.security.JwtAuthFilter@8bd076a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3903cfc9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b1b1784, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dffcf1, org.springframework.security.web.session.SessionManagementFilter@6dd7af2f, org.springframework.security.web.access.ExceptionTranslationFilter@6908674b, org.springframework.security.web.access.intercept.AuthorizationFilter@230dd372]
+2025-12-18T10:21:33.938+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.938+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/actuator/**']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.939+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui/**']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.939+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui.html']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.939+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/v3/api-docs/**']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.939+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-resources/**']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.939+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/webjars/**']
+2025-12-18T10:21:33.939+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.940+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/favicon.ico']
+2025-12-18T10:21:33.940+01:00  WARN 827169 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:21:33.940+01:00  INFO 827169 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/error']
+2025-12-18T10:21:34.022+01:00  INFO 827169 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-12-18T10:21:34.034+01:00  INFO 827169 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Started TaskManagerApplication in 3.584 seconds (process running for 3.864)
+2025-12-18T10:21:45.925+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-18T10:21:45.925+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-18T10:21:45.927+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-18T10:21:45.939+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/1/tasks/4
+2025-12-18T10:21:46.023+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/1/tasks/4
+2025-12-18T10:21:46.164+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] http                                     : DELETE /api/projects/1/tasks/4 200 138ms req= resp=
+2025-12-18T10:21:46.165+01:00 ERROR 827169 --- [spring] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+
+jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:303) ~[spring-orm-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy122.remove(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$DeleteExecution.doExecute(JpaQueryExecution.java:298) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy130.deleteByIdAndProjectId(Unknown Source) ~[na:na]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl.deleteByIdAndProjectId(TaskRepositoryImpl.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.6.jar:6.1.6]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl$$SpringCGLIB$$0.deleteByIdAndProjectId(<generated>) ~[classes/:na]
+	at com.example.taskmanager.task.application.DeleteTaskUseCaseImpl.deleteTask(DeleteTaskUseCaseImpl.java:22) ~[classes/:na]
+	at com.example.taskmanager.task.web.TaskController.deleteTask(TaskController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at com.example.taskmanager.config.AppConfig$1.doFilterInternal(AppConfig.java:35) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.example.taskmanager.shared.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:67) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-18T10:23:14.877+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T10:23:14.879+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T10:23:14.879+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T10:23:14.880+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T10:23:14.881+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T10:23:14.881+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1
+2025-12-18T10:23:14.882+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T10:23:14.883+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/tasks
+2025-12-18T10:23:14.884+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/1/progress
+2025-12-18T10:23:14.884+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1
+2025-12-18T10:23:14.886+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/tasks
+2025-12-18T10:23:14.886+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/1/progress
+2025-12-18T10:23:14.894+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects/1/tasks 200 8ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false},{"id":12,"projectId":1,"title":"task","description":"task dzeb","dueDate":"2026-11-11T00:00:00Z","completed":true}]
+2025-12-18T10:23:14.895+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/1 200 15ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T10:23:14.894+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/1 200 10ms req= resp={"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"}
+2025-12-18T10:23:14.894+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/1/tasks 200 12ms req= resp=[{"id":4,"projectId":1,"title":"doTask","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":false},{"id":6,"projectId":1,"title":"doTask2","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":7,"projectId":1,"title":"doTask7","description":"just do task bro","dueDate":"2025-12-20T21:39:07.192Z","completed":true},{"id":10,"projectId":1,"title":"task0","description":"taskkk","dueDate":"2026-12-05T00:00:00Z","completed":false},{"id":11,"projectId":1,"title":"taaaks","description":"kskssk","dueDate":"2026-12-05T06:00:00Z","completed":false},{"id":12,"projectId":1,"title":"task","description":"task dzeb","dueDate":"2026-11-11T00:00:00Z","completed":true}]
+2025-12-18T10:23:14.896+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/1/progress 200 14ms req= resp={"totalTasks":6,"completedTasks":3,"progressPercentage":50.0}
+2025-12-18T10:23:14.897+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-7] http                                     : GET /api/projects/1/progress 200 11ms req= resp={"totalTasks":6,"completedTasks":3,"progressPercentage":50.0}
+2025-12-18T10:23:31.508+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-18T10:23:31.510+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T10:23:31.510+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-18T10:23:31.557+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-8] http                                     : POST /api/auth/login 200 47ms req={"email":"admin@admin.com","password":"123456"} resp={"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzY2MDQ5ODExLCJleHAiOjE3NjYxMzYyMTF9.5LjxRYPFYG89eoVTxMkFYgRDbZgkHGWCWaxbyfu7X02f5NqJN0xDHuGCTeSE2Zlb"}
+2025-12-18T10:23:31.581+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T10:23:31.581+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T10:23:31.583+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T10:23:31.583+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T10:23:31.588+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects 200 5ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T10:23:31.588+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects 200 5ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T10:23:34.442+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:23:34.444+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:23:34.445+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:23:34.445+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:23:34.445+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:23:34.445+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:23:34.446+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:23:34.447+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:23:34.447+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:23:34.447+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:23:34.447+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:23:34.449+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:23:34.451+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/2 200 7ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:23:34.452+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/2/tasks 200 5ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false}]
+2025-12-18T10:23:34.452+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/2 200 5ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:23:34.453+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/2/tasks 200 6ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false}]
+2025-12-18T10:23:34.455+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/2/progress 200 8ms req= resp={"totalTasks":2,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:23:34.459+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects/2/progress 200 10ms req= resp={"totalTasks":2,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:23:56.116+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/2/tasks
+2025-12-18T10:23:56.118+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/2/tasks
+2025-12-18T10:23:56.287+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-7] http                                     : POST /api/projects/2/tasks 200 169ms req={"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00.000Z"} resp=13
+2025-12-18T10:23:56.292+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:23:56.292+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:23:56.293+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:23:56.293+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:23:56.294+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:23:56.294+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:23:56.297+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects/2/tasks 200 3ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":13,"projectId":2,"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:23:56.297+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects/2 200 3ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:23:56.300+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects/2/progress 200 6ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:24:02.842+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/2/tasks/13
+2025-12-18T10:24:02.843+01:00 DEBUG 827169 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/2/tasks/13
+2025-12-18T10:24:02.847+01:00  INFO 827169 --- [spring] [http-nio-8080-exec-1] http                                     : DELETE /api/projects/2/tasks/13 200 4ms req= resp=
+2025-12-18T10:24:02.847+01:00 ERROR 827169 --- [spring] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+
+jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:303) ~[spring-orm-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy122.remove(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$DeleteExecution.doExecute(JpaQueryExecution.java:298) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy130.deleteByIdAndProjectId(Unknown Source) ~[na:na]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl.deleteByIdAndProjectId(TaskRepositoryImpl.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.6.jar:6.1.6]
+	at com.example.taskmanager.task.infrastructure.TaskRepositoryImpl$$SpringCGLIB$$0.deleteByIdAndProjectId(<generated>) ~[classes/:na]
+	at com.example.taskmanager.task.application.DeleteTaskUseCaseImpl.deleteTask(DeleteTaskUseCaseImpl.java:22) ~[classes/:na]
+	at com.example.taskmanager.task.web.TaskController.deleteTask(TaskController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at com.example.taskmanager.config.AppConfig$1.doFilterInternal(AppConfig.java:35) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.example.taskmanager.shared.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:67) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-18T10:24:11.081+01:00  INFO 827169 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T10:24:11.083+01:00  INFO 827169 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-18T10:24:11.085+01:00  INFO 827169 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-18T10:24:17.054+01:00  INFO 829842 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Starting TaskManagerApplication using Java 17.0.17 with PID 829842 (/home/opm/IdeaProjects/spring/target/classes started by opm in /home/opm/IdeaProjects/spring)
+2025-12-18T10:24:17.055+01:00  INFO 829842 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-18T10:24:17.574+01:00  INFO 829842 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18T10:24:17.615+01:00  INFO 829842 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2025-12-18T10:24:17.966+01:00  INFO 829842 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-18T10:24:17.976+01:00  INFO 829842 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-18T10:24:17.977+01:00  INFO 829842 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-18T10:24:18.010+01:00  INFO 829842 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-18T10:24:18.010+01:00  INFO 829842 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 924 ms
+2025-12-18T10:24:18.179+01:00  INFO 829842 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-18T10:24:18.238+01:00  INFO 829842 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8e99809
+2025-12-18T10:24:18.239+01:00  INFO 829842 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-18T10:24:18.259+01:00  INFO 829842 --- [spring] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/task_manager (PostgreSQL 16.11)
+2025-12-18T10:24:18.289+01:00  INFO 829842 --- [spring] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.018s)
+2025-12-18T10:24:18.302+01:00  INFO 829842 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
+2025-12-18T10:24:18.304+01:00  INFO 829842 --- [spring] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-12-18T10:24:18.363+01:00  INFO 829842 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18T10:24:18.403+01:00  INFO 829842 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-18T10:24:18.426+01:00  INFO 829842 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-18T10:24:18.555+01:00  INFO 829842 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18T10:24:19.052+01:00  INFO 829842 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18T10:24:19.073+01:00  INFO 829842 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T10:24:19.385+01:00  WARN 829842 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-18T10:24:19.409+01:00 DEBUG 829842 --- [spring] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-12-18T10:24:19.590+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75bbe39d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6805415d, org.springframework.security.web.context.SecurityContextHolderFilter@39f3285d, org.springframework.security.web.header.HeaderWriterFilter@1fb379e4, org.springframework.web.filter.CorsFilter@870413c, org.springframework.security.web.authentication.logout.LogoutFilter@c0cb9c2, com.example.taskmanager.shared.security.JwtAuthFilter@68b734a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cf7c055, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b6fc231, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3791160a, org.springframework.security.web.session.SessionManagementFilter@e5d9fa7, org.springframework.security.web.access.ExceptionTranslationFilter@5f26fc4d, org.springframework.security.web.access.intercept.AuthorizationFilter@7f5c4ff8]
+2025-12-18T10:24:19.807+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.807+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/actuator/**']
+2025-12-18T10:24:19.807+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.807+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui/**']
+2025-12-18T10:24:19.807+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.807+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-ui.html']
+2025-12-18T10:24:19.807+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.808+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/v3/api-docs/**']
+2025-12-18T10:24:19.808+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.808+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/swagger-resources/**']
+2025-12-18T10:24:19.808+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.808+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/webjars/**']
+2025-12-18T10:24:19.808+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.808+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/favicon.ico']
+2025-12-18T10:24:19.808+01:00  WARN 829842 --- [spring] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-12-18T10:24:19.808+01:00  INFO 829842 --- [spring] [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/error']
+2025-12-18T10:24:19.848+01:00  INFO 829842 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-12-18T10:24:19.858+01:00  INFO 829842 --- [spring] [main] c.e.taskmanager.TaskManagerApplication   : Started TaskManagerApplication in 3.049 seconds (process running for 3.237)
+2025-12-18T10:24:30.379+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-18T10:24:30.379+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-18T10:24:30.381+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:24:30.395+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:24:30.464+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/2/tasks 200 104ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":13,"projectId":2,"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-4] http                                     : GET /api/projects/2 200 104ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects/2/progress 200 104ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/2 200 104ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/2/tasks 200 104ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":13,"projectId":2,"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:24:30.572+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/2/progress 200 104ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:24:46.932+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-18T10:24:46.933+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-18T10:24:46.933+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-18T10:24:46.986+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-7] http                                     : POST /api/auth/login 200 53ms req={"email":"admin@admin.com","password":"123456"} resp={"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzY2MDQ5ODg2LCJleHAiOjE3NjYxMzYyODZ9.HV6oYjqbTNjg0-BxqH2os3R9Yl47FU-GLFHho2Pz7QuV5XC_2w0zXrTRHUwyBUVE"}
+2025-12-18T10:24:47.011+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T10:24:47.011+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects
+2025-12-18T10:24:47.013+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T10:24:47.013+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects
+2025-12-18T10:24:47.019+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects 200 5ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T10:24:47.019+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects 200 5ms req= resp=[{"id":1,"title":"test_project","description":"im testiiiiiing the project","createdAt":"2025-12-17T15:45:49.083725Z"},{"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}]
+2025-12-18T10:24:49.306+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:24:49.306+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:24:49.306+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:24:49.307+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:24:49.307+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:24:49.308+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:24:49.308+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:24:49.308+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:24:49.308+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:24:49.309+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:24:49.309+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:24:49.311+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:24:49.312+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-5] http                                     : GET /api/projects/2/tasks 200 4ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":13,"projectId":2,"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:24:49.312+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/2 200 4ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:24:49.312+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects/2 200 4ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:24:49.313+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/2/tasks 200 4ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":13,"projectId":2,"title":"delete","description":"deleteeee","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:24:49.316+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-6] http                                     : GET /api/projects/2/progress 200 8ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:24:49.319+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-2] http                                     : GET /api/projects/2/progress 200 8ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:24:52.840+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/2/tasks/13
+2025-12-18T10:24:52.841+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/2/tasks/13
+2025-12-18T10:24:52.868+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-4] http                                     : DELETE /api/projects/2/tasks/13 204 27ms req= resp=
+2025-12-18T10:24:52.874+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:24:52.874+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:24:52.874+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:24:52.876+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:24:52.876+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:24:52.876+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:24:52.880+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-7] http                                     : GET /api/projects/2 200 4ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:24:52.880+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects/2/tasks 200 4ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false}]
+2025-12-18T10:24:52.884+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects/2/progress 200 8ms req= resp={"totalTasks":2,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:26:10.591+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/projects/2/tasks
+2025-12-18T10:26:10.592+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/projects/2/tasks
+2025-12-18T10:26:10.747+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-4] http                                     : POST /api/projects/2/tasks 200 155ms req={"title":"rrr","description":"rrrr","dueDate":"2026-01-01T00:00:00.000Z"} resp=14
+2025-12-18T10:26:10.755+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:26:10.756+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:26:10.758+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:26:10.760+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:26:10.761+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:26:10.761+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-7] http                                     : GET /api/projects/2 200 5ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:26:10.762+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:26:10.766+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-8] http                                     : GET /api/projects/2/tasks 200 5ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false},{"id":14,"projectId":2,"title":"rrr","description":"rrrr","dueDate":"2026-01-01T00:00:00Z","completed":false}]
+2025-12-18T10:26:10.768+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-9] http                                     : GET /api/projects/2/progress 200 5ms req= resp={"totalTasks":3,"completedTasks":0,"progressPercentage":0.0}
+2025-12-18T10:26:25.977+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing DELETE /api/projects/2/tasks/14
+2025-12-18T10:26:25.978+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured DELETE /api/projects/2/tasks/14
+2025-12-18T10:26:25.986+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-5] http                                     : DELETE /api/projects/2/tasks/14 204 8ms req= resp=
+2025-12-18T10:26:25.994+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2
+2025-12-18T10:26:25.996+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2
+2025-12-18T10:26:25.997+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/tasks
+2025-12-18T10:26:25.998+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/projects/2/progress
+2025-12-18T10:26:25.999+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/tasks
+2025-12-18T10:26:26.000+01:00 DEBUG 829842 --- [spring] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/projects/2/progress
+2025-12-18T10:26:26.001+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-1] http                                     : GET /api/projects/2 200 5ms req= resp={"id":2,"title":"frontend","description":"u have to make the front end look better","createdAt":"2025-12-17T17:47:06.831248Z"}
+2025-12-18T10:26:26.005+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-10] http                                     : GET /api/projects/2/tasks 200 4ms req= resp=[{"id":8,"projectId":2,"title":"navbar","description":"make navbar look better","dueDate":"2025-12-17T00:07:00Z","completed":false},{"id":9,"projectId":2,"title":"landing","description":"make landing page look personal","dueDate":"2025-12-24T00:00:00Z","completed":false}]
+2025-12-18T10:26:26.007+01:00  INFO 829842 --- [spring] [http-nio-8080-exec-3] http                                     : GET /api/projects/2/progress 200 7ms req= resp={"totalTasks":2,"completedTasks":0,"progressPercentage":0.0}

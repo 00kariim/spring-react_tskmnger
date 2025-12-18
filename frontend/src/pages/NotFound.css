@@ -1,0 +1,32 @@
+.not-found-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.not-found-content {
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #3498db;
+  margin: 0;
+  line-height: 1;
+}
+
+.not-found-subtitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+.not-found-message {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin: 1rem 0 2rem 0;
+}
+
