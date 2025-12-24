@@ -64,7 +64,7 @@ Default login (seeded by Flyway migration):
 - Project tasks: `/api/projects/{id}/tasks` (list/create/complete/delete)
 - Search tasks: `/api/projects/{id}/tasks/search?q=...&completed=true`
 
-(The full OpenAPI/Swagger UI is available at `/swagger-ui.html` when backend is running.)
+The full OpenAPI/Swagger UI is available at http://localhost:8080/swagger-ui/index.html when backend is running.
 
 ## Running the backend locally (without Docker)
 
