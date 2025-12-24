@@ -46,5 +46,18 @@ export const dataService = {
     const response = await api.delete(`/projects/${projectId}/tasks/${taskId}`);
     return response.data;
   },
+
+  // Search tasks within a project using optional filters { q, status, dueDate }
+  async searchTasks(projectId, filters = {}) {
+    const params = new URLSearchParams();
+    if (filters.q) params.append('q', filters.q);
+    if (filters.status) params.append('status', filters.status);
+    if (filters.dueDate) params.append('dueDate', filters.dueDate);
+
+    const queryString = params.toString();
+    const url = `/projects/${projectId}/tasks/search${queryString ? `?${queryString}` : ''}`;
+    const response = await api.get(url);
+    return response.data;
+  },
 };
 

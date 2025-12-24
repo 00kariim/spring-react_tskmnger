@@ -4,6 +4,7 @@ import { dataService } from '../services/dataService.js';
 import ProgressBar from '../components/ProgressBar.jsx';
 import TaskItem from '../components/TaskItem.jsx';
 import Button from '../components/Button.jsx';
+import TaskFilter from '../components/TaskFilter.jsx';
 import './ProjectDetails.css';
 
 const ProjectDetails = () => {
@@ -19,6 +20,7 @@ const ProjectDetails = () => {
   const [newTaskDescription, setNewTaskDescription] = useState('');
   const [newTaskDueDate, setNewTaskDueDate] = useState('');
   const [creating, setCreating] = useState(false);
+  const [filtering, setFiltering] = useState(false);
 
   useEffect(() => {
     loadProjectData();
@@ -97,6 +99,21 @@ const ProjectDetails = () => {
     }
   };
 
+  // This function is passed down to TaskFilter
+  const handleSearch = async (filters) => {
+    setFiltering(true);
+    setError('');
+    try {
+      const results = await dataService.searchTasks(projectId, filters);
+      setTasks(results);
+    } catch (error) {
+      console.error('Search failed', error);
+      setError('Search failed. Please try again.');
+    } finally {
+      setFiltering(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="project-details-container">
@@ -139,12 +156,15 @@ const ProjectDetails = () => {
       <div className="tasks-section">
         <div className="tasks-header">
           <h2>Tasks</h2>
-          <Button
-            variant="primary"
-            onClick={() => setShowCreateForm(!showCreateForm)}
-          >
-            {showCreateForm ? 'Cancel' : '+ New Task'}
-          </Button>
+          <div className="tasks-header-actions">
+            <TaskFilter onSearch={handleSearch} />
+            <Button
+              variant="primary"
+              onClick={() => setShowCreateForm(!showCreateForm)}
+            >
+              {showCreateForm ? 'Cancel' : '+ New Task'}
+            </Button>
+          </div>
         </div>
 
         {showCreateForm && (
@@ -193,7 +213,7 @@ const ProjectDetails = () => {
 
         {tasks.length === 0 ? (
           <div className="empty-state">
-            <p>No tasks yet. Create your first task to get started!</p>
+            <p>{filtering ? 'No matching tasks.' : 'No tasks yet. Create your first task to get started!'}</p>
           </div>
         ) : (
           <div className="tasks-list">

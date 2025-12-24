@@ -3,7 +3,7 @@ FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-# Skip tests to speed up build (since we'll run them separately)
+ 
 RUN mvn clean package -DskipTests
 
 # Stage 2: Run the application

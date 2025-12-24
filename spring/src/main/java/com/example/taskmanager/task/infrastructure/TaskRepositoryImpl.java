@@ -82,6 +82,47 @@ public class TaskRepositoryImpl implements TaskRepository {
     public void deleteByIdAndProjectId(Long taskId, Long projectId) {
         jpaRepository.deleteByIdAndProjectId(taskId, projectId);
     }
+
+    @Override
+    public List<Task> search(Long projectId, String query, Boolean completed) {
+        List<TaskJpaEntity> entities;
+        String q = (query == null) ? "" : query;
+        if (completed == null) {
+            entities = jpaRepository.findByProjectIdAndTitleContainingIgnoreCaseOrProjectIdAndDescriptionContainingIgnoreCase(
+                    projectId, q, projectId, q);
+        } else {
+            entities = jpaRepository.findByProjectIdAndCompletedAndTitleContainingIgnoreCaseOrProjectIdAndCompletedAndDescriptionContainingIgnoreCase(
+                    projectId, completed, q, projectId, completed, q);
+        }
+
+        return entities.stream()
+                .map(e -> new Task(
+                        new TaskId(e.getId()),
+                        e.getProjectId(),
+                        e.getTitle(),
+                        e.getDescription(),
+                        e.getDueDate(),
+                        e.isCompleted()
+                ))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public org.springframework.data.domain.Page<com.example.taskmanager.task.domain.Task> findByProjectId(Long projectId, org.springframework.data.domain.Pageable pageable) {
+        var entityPage = jpaRepository.findByProjectId(projectId, pageable);
+        var domainList = entityPage.getContent().stream()
+                .map(e -> new com.example.taskmanager.task.domain.Task(
+                        new com.example.taskmanager.task.domain.TaskId(e.getId()),
+                        e.getProjectId(),
+                        e.getTitle(),
+                        e.getDescription(),
+                        e.getDueDate(),
+                        e.isCompleted()
+                ))
+                .toList();
+
+        return new org.springframework.data.domain.PageImpl<>(domainList, pageable, entityPage.getTotalElements());
+    }
 }
 
 

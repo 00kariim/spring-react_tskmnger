@@ -4,6 +4,7 @@ import com.example.taskmanager.task.application.CompleteTaskUseCase;
 import com.example.taskmanager.task.application.CreateTaskUseCase;
 import com.example.taskmanager.task.application.DeleteTaskUseCase;
 import com.example.taskmanager.task.application.ListTasksUseCase;
+import com.example.taskmanager.task.application.SearchTasksUseCase;
 import com.example.taskmanager.task.domain.Task;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
@@ -27,15 +29,18 @@ public class TaskController {
     private final CompleteTaskUseCase completeTaskUseCase;
     private final DeleteTaskUseCase deleteTaskUseCase;
     private final ListTasksUseCase listTasksUseCase;
+    private final SearchTasksUseCase searchTasksUseCase;
 
     public TaskController(CreateTaskUseCase createTaskUseCase,
                           CompleteTaskUseCase completeTaskUseCase,
                           DeleteTaskUseCase deleteTaskUseCase,
-                          ListTasksUseCase listTasksUseCase) {
+                          ListTasksUseCase listTasksUseCase,
+                          SearchTasksUseCase searchTasksUseCase) {
         this.createTaskUseCase = createTaskUseCase;
         this.completeTaskUseCase = completeTaskUseCase;
         this.deleteTaskUseCase = deleteTaskUseCase;
         this.listTasksUseCase = listTasksUseCase;
+        this.searchTasksUseCase = searchTasksUseCase;
     }
 
     @PostMapping
@@ -85,6 +90,24 @@ public class TaskController {
                                            Authentication authentication) {
         deleteTaskUseCase.deleteTask(projectId, taskId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<TaskResponse>> searchTasks(@PathVariable Long projectId,
+                                                          @RequestParam(value = "q", required = false) String q,
+                                                          @RequestParam(value = "completed", required = false) Boolean completed) {
+        List<Task> tasks = searchTasksUseCase.execute(projectId, q, completed);
+        List<TaskResponse> responses = tasks.stream()
+                .map(t -> new TaskResponse(
+                        t.getId().getValue(),
+                        t.getProjectId(),
+                        t.getTitle(),
+                        t.getDescription(),
+                        t.getDueDate(),
+                        t.isCompleted()
+                ))
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(responses);
     }
 }
 
