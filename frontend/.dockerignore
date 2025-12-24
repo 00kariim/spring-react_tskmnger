@@ -1,0 +1,23 @@
+# CRITICAL: Do not copy local dependencies
+node_modules/
+
+# Ignore local builds
+dist/
+build/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore Git
+.git/
+.gitignore
+
+# Ignore local env files
+.env.local
+.env

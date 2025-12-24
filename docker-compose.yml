@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # 1. Database Service
+  postgres:
+    image: postgres:15-alpine
+    container_name: task_db
+    environment:
+      POSTGRES_DB: taskmanager
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  # 2. Backend Service
+  backend:
+    build: ./spring # Path to your backend folder
+    container_name: task_backend
+    ports:
+      - "8080:8080"
+    environment:
+      # Connect to the 'postgres' service name defined above
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/taskmanager
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: password
+      # Ensure Hibernate updates the schema automatically
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  # 3. Frontend Service
+  frontend:
+    build: ./frontend # Path to your frontend folder
+    container_name: task_frontend
+    ports:
+      - "3000:80" # Maps port 80 (Nginx) to localhost:3000
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,22 @@
+# Ignore compiled output
+target/
+*.class
+
+# Ignore IDE files
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.classpath
+.project
+.settings/
+
+# Ignore logs
+*.log
+
+# Ignore Git
+.git/
+.gitignore
+
+# Ignore local configs that might contain secrets (if you had them)
+.env

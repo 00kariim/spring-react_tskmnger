@@ -20,18 +20,25 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    e.stopPropagation();
     setError('');
     setLoading(true);
 
-    const result = await login(email, password);
+    try {
+      const result = await login(email, password);
+      console.log('login result', result);
 
-    if (result.success) {
-      navigate('/');
-    } else {
-      setError(result.error || 'Invalid email or password');
+      if (result.success) {
+        navigate('/');
+      } else {
+        setError(result.error || 'Invalid email or password');
+      }
+    } catch (err) {
+      console.error('Login error', err);
+      setError(err?.response?.data?.message || 'Login failed');
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
