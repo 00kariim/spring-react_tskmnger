@@ -1,3 +1,6 @@
+# I FORGOT TO SHOWCASE DELETE TASK IN THE VIDEO IT DOES WORK, Merry Christmas Team <3
+
+
 # Task Manager — Fullstack (Spring Boot + React)
 
 A simple task management application (React frontend + Spring Boot backend) with Docker support.
